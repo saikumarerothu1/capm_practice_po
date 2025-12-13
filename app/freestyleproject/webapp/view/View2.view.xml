@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.ust.freestyleproject.controller.View2"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page >
+    	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Purchase Order Details"
+		 press="press">
+		<TileContent>
+			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
+		</TileContent>
+	</GenericTile>
+    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Purchase Item Details"
+		 press="press1">
+		<TileContent>
+			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
+		</TileContent>
+	</GenericTile>
+    </Page>
+</mvc:View>

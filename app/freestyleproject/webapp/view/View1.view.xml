@@ -1,0 +1,62 @@
+<mvc:View controllerName="com.ust.freestyleproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <IconTabBar
+                id="idIconTabBar"
+                expandable="true"
+                selectedKey="POHeaders">
+                <items>
+                    <IconTabFilter
+    id="POHeaders1"
+    text="POHeaders"
+    key="POHeaders"
+    icon="sap-icon://document-text"
+    iconColor="Positive">
+
+    <Table
+        id="POHeaders"
+        items="{ path : '/POHeaders' }">
+
+        <columns>
+            <Column id='cl1'>
+                <Text id='txt1' text="po_id" />
+            </Column>
+            <Column id='cl2'>
+                <Text id='txt2' text="po_number" />
+            </Column>
+            <Column id='cl3'>
+                <Text id='txt3' text="vendor" />
+            </Column>
+            <Column id='cl4'>
+                <Text id='txt4' text="modifiedBy " />
+            </Column>
+            <Column id='cl5'>
+                <Text id='txt5' text="po_org" />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem id='cl6'>
+                <cells>
+                    <Text id='txt6' text="{po_id}" />
+                    <Text id='txt7' text="{po_number}" />
+                    <Text  id='txt8' text="vendor}" />
+                    <Text id='txt9' text="{modifiedBy}" />
+                    <Text id='txt10' text="{po_org}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+
+    </Table>
+
+</IconTabFilter>
+                </items>
+
+            </IconTabBar>
+            
+        </content>
+    </Page>
+
+</mvc:View>
