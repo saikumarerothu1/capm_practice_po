@@ -23,7 +23,8 @@
     "watch-auds": "cds watch --open auds/index.html?sap-ui-xx-viewCache=false --livereload false",
     "watch-poproject": "cds watch --open com.ust.poproject/index.html?sap-ui-xx-viewCache=false --livereload false",
     "watch-fioriproject": "cds watch --open com.ust.fioriproject/index.html?sap-ui-xx-viewCache=false --livereload false",
-    "watch-freestyleproject": "cds watch --open com.ust.freestyleproject/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-freestyleproject": "cds watch --open com.ust.freestyleproject/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-pofioriproject": "cds watch --open com.ust.pofioriproject/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "workspaces": [
@@ -39,7 +40,9 @@
     "app/aud",
     "app/aud",
     "app/auds",
-    "app/fioriproject"
+    "app/fioriproject",
+    "app/fioriproject",
+    "app/pofioriproject"
   ],
   "cds": {
     "requires": {

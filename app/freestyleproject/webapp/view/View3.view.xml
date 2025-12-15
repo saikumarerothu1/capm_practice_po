@@ -1,59 +1,37 @@
-<mvc:View controllerName="com.ust.freestyleproject.controller.View3"
+<mvc:View
+    controllerName="com.ust.freestyleproject.controller.View3"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page  title="{i18n>title}">
+
+    <Page title="PO Items">
         <content>
-            <IconTabBar
-                expandable="true"
-                selectedKey="POItems">
+
+            <Table
+                id="poItemsTable"
+                items="{/POItems}">
+
+                <columns>
+                    <Column><Text text="PO ID" /></Column>
+                    <Column><Text text="Line Item" /></Column>
+                    <Column><Text text="Material ID" /></Column>
+                    <Column><Text text="Material" /></Column>
+                    <Column><Text text="Description" /></Column>
+                </columns>
+
                 <items>
-                    <IconTabFilter
-    text="POItems"
-    key="POItems"
-    icon="sap-icon://document-text"
-    iconColor="Positive">
-
-    <Table
-        
-        items="{ path : '/POItems' }">
-
-        <columns>
-            <Column >
-                <Text  text="po_id" />
-            </Column>
-            <Column >
-                <Text  text="po_lineitem_number" />
-            </Column>
-            <Column >
-                <Text  text="po_item_material_id" />
-            </Column>
-            <Column >
-                <Text  text="po_item_materials" />
-            </Column>
-            <Column >
-                <Text text="po_item_materialsdesc" />
-            </Column>
-        </columns>
-
-        <items>
-            <ColumnListItem >
-                <cells>
-                    <Text text="{po_id}" />
-                    <Text  text="{po_lineitem_number}" />
-                    <Text   text="{po_item_material_id}" />
-                    <Text  text="{po_item_materials}" />
-                    <Text text="{po_item_materialsdesc}" />
-                </cells>
-            </ColumnListItem>
-        </items>
-
-    </Table>
-
-</IconTabFilter>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{po_id}" />
+                            <Text text="{po_lineitem_number}" />
+                            <Text text="{po_item_material_id}" />
+                            <Text text="{po_item_materials}" />
+                            <Text text="{po_item_materialsdesc}" />
+                        </cells>
+                    </ColumnListItem>
                 </items>
 
-            </IconTabBar>
-            
+            </Table>
+
         </content>
     </Page>
 

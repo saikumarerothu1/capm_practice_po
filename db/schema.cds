@@ -224,7 +224,7 @@ entity poheader : primary {
 
   @title : 'Vendor ID'
   @Common.Label : 'Vendor ID'
-  @mandatory
+
   po_vm_id : UUID not null;
 
   @title : 'Vendor Code'

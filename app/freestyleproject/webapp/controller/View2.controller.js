@@ -12,11 +12,6 @@ sap.ui.define([
           var ab= UIComponent.getRouterFor(this);
           ab.navTo("RouteView2");
         },
-        press1: function() {
-          // Handle press event
-          var ab= UIComponent.getRouterFor(this);
-          ab.navTo("RouteView3");
-        },
         press2: function() {
           // Handle press event
           var ab= UIComponent.getRouterFor(this);

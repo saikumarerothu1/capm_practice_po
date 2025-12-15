@@ -9,12 +9,6 @@
 			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
 		</TileContent>
 	</GenericTile>
-    <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Purchase Item Details"
-		 press="press1">
-		<TileContent>
-			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
-		</TileContent>
-	</GenericTile>
 	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Vendor Information"
 		 press="press2">
 		<TileContent>
