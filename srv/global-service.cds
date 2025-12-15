@@ -1,5 +1,5 @@
 using po.ust from '../db/schema';
-
+@path : '/global'
 service globalservice {
     @Common.Label: 'Vendors'
     entity Vendors        as projection on ust.vendormaster;

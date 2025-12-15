@@ -16,6 +16,16 @@ sap.ui.define([
           // Handle press event
           var ab= UIComponent.getRouterFor(this);
           ab.navTo("RouteView3");
+        },
+        press2: function() {
+          // Handle press event
+          var ab= UIComponent.getRouterFor(this);
+          ab.navTo("RouteView4");
+        },
+        press3: function() {
+          // Handle press event
+          var ab= UIComponent.getRouterFor(this);
+          ab.navTo("RouteView5");
         }
     });
 });

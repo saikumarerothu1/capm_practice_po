@@ -1,0 +1,56 @@
+<mvc:View controllerName="com.ust.freestyleproject.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page  title="{i18n>title}">
+        <content>
+            <IconTabBar
+                expandable="true"
+                selectedKey="Materials">
+                <items>
+                    <IconTabFilter
+    text="Materials"
+    key="Materials"
+    icon="sap-icon://document-text"
+    iconColor="Positive">
+
+    <Table
+        
+        items="{ path : '/Materials' }">
+
+        <columns>
+            <Column >
+                <Text  text="mm_id" />
+            </Column>
+            <Column >
+                <Text  text="mm_code" />
+            </Column>
+            <Column >
+                <Text  text="mm_desc" />
+            </Column>
+            <Column >
+                <Text text="mm_stdprice" />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem >
+                <cells>
+                    <Text text="{mm_id}" />
+                    <Text  text="{mm_code}" />
+                    <Text   text="{mm_desc}" />
+                    <Text text="{mm_stdprice}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+
+    </Table>
+
+</IconTabFilter>
+                </items>
+
+            </IconTabBar>
+            
+        </content>
+    </Page>
+
+</mvc:View>

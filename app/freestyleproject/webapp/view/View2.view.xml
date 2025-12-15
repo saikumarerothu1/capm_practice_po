@@ -15,5 +15,17 @@
 			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
 		</TileContent>
 	</GenericTile>
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Vendor Information"
+		 press="press2">
+		<TileContent>
+			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
+		</TileContent>
+	</GenericTile>
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Material's Details"
+		 press="press3">
+		<TileContent>
+			<ImageContent src="test-resources/sap/m/demokit/sample/GenericTileAsLaunchTile/images/SAPLogoLargeTile_28px_height.png" />
+		</TileContent>
+	</GenericTile>
     </Page>
 </mvc:View>

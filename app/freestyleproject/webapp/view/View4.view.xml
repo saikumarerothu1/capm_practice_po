@@ -1,0 +1,60 @@
+<mvc:View controllerName="com.ust.freestyleproject.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page  title="{i18n>title}">
+        <content>
+            <IconTabBar
+                expandable="true"
+                selectedKey="Vendors">
+                <items>
+                    <IconTabFilter
+    text="Vendors"
+    key="Vendors"
+    icon="sap-icon://document-text"
+    iconColor="Positive">
+
+    <Table
+        
+        items="{ path : '/Vendors' }">
+
+        <columns>
+            <Column >
+                <Text  text="vm_id" />
+            </Column>
+            <Column >
+                <Text  text="vm_code" />
+            </Column>
+            <Column >
+                <Text  text="vm_gstno" />
+            </Column>
+            <Column >
+                <Text  text="vm_person" />
+            </Column>
+            <Column >
+                <Text text="vm_email" />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem >
+                <cells>
+                    <Text text="{vm_id}" />
+                    <Text  text="{vm_code}" />
+                    <Text   text="{vm_gstno}" />
+                    <Text  text="{vm_person}" />
+                    <Text text="{vm_email}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+
+    </Table>
+
+</IconTabFilter>
+                </items>
+
+            </IconTabBar>
+            
+        </content>
+    </Page>
+
+</mvc:View>

@@ -42,7 +42,7 @@
                 <cells>
                     <Text id='txt6' text="{po_id}" />
                     <Text id='txt7' text="{po_number}" />
-                    <Text  id='txt8' text="vendor}" />
+                    <Text  id='txt8' text="{vendor}" />
                     <Text id='txt9' text="{modifiedBy}" />
                     <Text id='txt10' text="{po_org}" />
                 </cells>

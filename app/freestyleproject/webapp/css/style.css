@@ -1,1 +1,7 @@
 /* Enter your custom styles here */
+.custom {
+  font-family: Arial, sans-serif;
+  background-color: blue;
+  margin: 0;
+  padding: 20px;
+}
